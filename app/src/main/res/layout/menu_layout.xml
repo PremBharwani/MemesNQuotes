@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightPink">
+
+    <TextView
+        android:id="@+id/memesText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/georgia_egular_font"
+        android:text="Memes"
+        android:textSize="56sp"
+        android:textColor="@color/darkPink"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/andText"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:textColor="@color/darkPink"
+        android:id="@+id/andText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/georgia_egular_font"
+        android:text="and"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/quotesText"/>
+
+    <TextView
+        android:id="@+id/quotesText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/georgia_egular_font"
+        android:text="Quotes"
+        android:textSize="56sp"
+        android:textColor="@color/darkPink"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/topGuideline"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/topGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5"
+        />
+    <Button
+        android:id="@+id/quotesButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        app:layout_constraintTop_toBottomOf="@id/quotesText"
+        app:layout_constraintEnd_toStartOf="@id/listMemesButton"
+        app:layout_constraintStart_toStartOf="parent"
+        android:fontFamily="@font/georgia"
+        android:text="quotes"
+        android:background="@drawable/custom_button"
+        android:onClick="quotesClickMenu"/>
+    <Button
+        android:id="@+id/listMemesButton"
+        android:layout_width="wrap_content"
+        android:background="@drawable/custom_button"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/georgia"
+        android:layout_marginTop="90dp"
+        app:layout_constraintTop_toBottomOf="@id/quotesText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/quotesButton"
+        android:text="Memes"
+        android:onClick="listOfMemesClickMenu" />
+    <!--
+    <Button
+        android:id="@+id/quotesButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:layout_marginHorizontal="5sp"
+        android:padding="5sp"
+        android:text="quotes"
+        android:onClick="quotesClickMenu"/>
+
+    <Button
+        android:id="@+id/memesButton"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginHorizontal="5sp"
+        android:padding="5sp"
+        android:text="memes"
+        android:onClick="memesClickMenu"/>
+    <Button
+        android:id="@+id/listMemesButton"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginHorizontal="5sp"
+        android:padding="5sp"
+        android:text="List Of Memes"
+        android:onClick="listOfMemesClickMenu" /> -->
+</androidx.constraintlayout.widget.ConstraintLayout>
