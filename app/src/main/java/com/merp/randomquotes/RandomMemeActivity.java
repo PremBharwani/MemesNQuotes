@@ -45,8 +45,6 @@ public class RandomMemeActivity extends AppCompatActivity {
 
     public static String PREM_TAG = "PREM_IS_LOGGING";
     public String memeUrlToLoad = "https://i.redd.it/yykt3r9zsex11.png";
-    URL memeApiUrl;
-    HttpsURLConnection memeApiConnection;
     ImageView memeImageView;
     Button  shareButton;
 

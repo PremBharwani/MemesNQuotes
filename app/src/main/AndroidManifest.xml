@@ -30,7 +30,6 @@
         </activity>
         <activity android:name=".RandomMemeActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar"/>
-        <activity android:name=".ListOfMemes"/>
     </application>
 
 </manifest>
